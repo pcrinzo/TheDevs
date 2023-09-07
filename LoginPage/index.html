@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+        
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#"><img src="ADlogo.png" alt="Logo"></a>
+            </div>
+            <div class="navbar-right">
+                <a href="#">ABOUT</a>
+                <a href="#">SHOP</a>
+                <a href="#">CONTACT</a>
+                <a href="#">HOME</a>
+            </div>
+        </nav>
+
+
+        <div class="main-container">
+            <div id="sign-up" class="left-container sign-up hidden">
+              <img src="LogLetter.png" alt="Logo">
+              <div style="width: 100%;">
+                <form action="index.html" class="signup-form">
+                  <input type="text" id="first-name" placeholder="Nome">
+                  <input type="text" id="last-name" placeholder="Sobrenome">
+                  <input type="email" id="email" placeholder="E-mail">
+                  <input type="password" id="password" placeholder="Password">
+                  <div class="check">
+                    <input type="checkbox" onclick="checkTerms()" id="agree-terms">
+                    <label for="agree-terms">Aceitar os
+                      <a href="#">Termos &amp; Condições</a>
+                    </label>
+                  </div>
+                  <button type="submit" id="signup_submit" class="button sign-up-btn disabled" disabled>Sign Up</button>
+                </form>
+              </div>
+              <div class="signin-link-container">
+                <p  onclick="changeToLogin()" class="signin-link">Já possui uma conta? Clique Aqui!</p>
+              </div>
+            </div>
+        
+            <div id="log-in" class="left-container log-in">
+              <img src="Cadastrese.png" alt="Logo">
+              <div style="width: 100%;">
+                <form action="index.html" class="signup-form">
+                  <input type="email" id="email" placeholder="E-mail">
+                  <input type="password" id="password" placeholder="Password">
+                  <button type="submit" id="submit" class="button log-in-btn" disabled>Login</button>
+                </form>
+              </div>
+              <div class="login-link-container">
+                <p onclick="changeToSignup()" class="login-link">Ainda não possui uma conta? Clique Aqui!</p>
+              </div>
+            </div>
+        
+            <div class="right-container"></div>
+          </div>
+          <footer>
+            <p>"Temos a Arte para não morrer da verdade" Friedrich Nietzsche <br> &copy;DevArt</p>
+          </footer>    
+    </body>  
+</html><script src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
